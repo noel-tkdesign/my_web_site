@@ -29,7 +29,8 @@ class RecommendationButton extends StatelessWidget {
           SizedBox(width: 20),
           Text(
             text,
-            style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+            style: TextStyle(
+                color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),
           ),
           SizedBox(
             width: 20,

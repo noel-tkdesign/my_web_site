@@ -73,6 +73,7 @@ class _MobileRecomendationCardState extends State<MobileRecomendationCard> {
                     style: TextStyle(
                       fontSize: 25,
                       fontWeight: FontWeight.bold,
+                      color: Colors.white,
                     ),
                   ),
                 ),
@@ -84,7 +85,7 @@ class _MobileRecomendationCardState extends State<MobileRecomendationCard> {
                     style: TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.bold,
-                      fontStyle: FontStyle.italic,
+                      //fontStyle: FontStyle.italic,
                       height: 1.5,
                     ),
                   ),

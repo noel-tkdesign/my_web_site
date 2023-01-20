@@ -30,7 +30,7 @@ class _TabletRecommendationCardState extends State<TabletRecommendationCard> {
       child: AnimatedContainer(
         duration: duration,
         padding: EdgeInsets.symmetric(horizontal: 20),
-        height: 240,
+        height: 260,
         width: 500,
         decoration: BoxDecoration(
           color: recommendations[widget.index].color,
@@ -63,8 +63,8 @@ class _TabletRecommendationCardState extends State<TabletRecommendationCard> {
               ),
             ),
             Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Padding(
                   padding: const EdgeInsets.only(top: 10, bottom: 10),
@@ -73,6 +73,7 @@ class _TabletRecommendationCardState extends State<TabletRecommendationCard> {
                     style: TextStyle(
                       fontSize: 25,
                       fontWeight: FontWeight.bold,
+                      color: Colors.white,
                     ),
                   ),
                 ),
@@ -83,7 +84,7 @@ class _TabletRecommendationCardState extends State<TabletRecommendationCard> {
                     style: TextStyle(
                       fontSize: 12,
                       fontWeight: FontWeight.bold,
-                      fontStyle: FontStyle.italic,
+                      //fontStyle: FontStyle.italic,
                       height: 1.5,
                     ),
                   ),

@@ -33,7 +33,7 @@ class _RecommendationCardState extends State<RecommendationCard> {
         duration: duration,
         margin: EdgeInsets.only(top: 60),
         padding: EdgeInsets.symmetric(horizontal: 20),
-        height: 350,
+        height: 380,
         width: 1100,
         decoration: BoxDecoration(
           color: recommendations[widget.index].color,
@@ -50,7 +50,7 @@ class _RecommendationCardState extends State<RecommendationCard> {
         child: Row(
           children: [
             Transform.translate(
-              offset: Offset(0, -0),
+              offset: Offset(0, -70),
               child: AnimatedContainer(
                 duration: duration,
                 height: 200,
@@ -70,7 +70,7 @@ class _RecommendationCardState extends State<RecommendationCard> {
             ),
             Column(
               mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Padding(
                   padding: const EdgeInsets.all(20.0),
@@ -91,17 +91,17 @@ class _RecommendationCardState extends State<RecommendationCard> {
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
                       //fontStyle: FontStyle.italic,
-                      height: 1.5,
+                      height: 2,
                     ),
                   ),
                 ),
                 SizedBox(
-                  height: 20,
+                  height: 50,
                 ),
                 SizedBox(
-                  width: 750,
+                  width: 800,
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       RecommendationButton(
                           imageSrc: 'assets/images/website.png',
@@ -111,11 +111,11 @@ class _RecommendationCardState extends State<RecommendationCard> {
                                 recommendations[widget.index].weburl, '');
                           }),
                       SizedBox(
-                        width: 20,
+                        width: 100,
                       ),
                       RecommendationButton(
                         imageSrc: 'assets/images/Youtube2.png',
-                        text: 'Youtube',
+                        text: 'YouTube',
                         press: () {
                           window.open(
                               recommendations[widget.index].youtubeurl, '');
