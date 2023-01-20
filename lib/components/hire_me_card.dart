@@ -52,7 +52,7 @@ class HireMeCard extends StatelessWidget {
             imageSrc: 'assets/images/googleforms.png',
             text: "GoogleFormsに移動",
             press: () {
-              window.open('https://forms.gle/QfwP9qQoQqCFikoSA7', '');
+              window.open('https://forms.gle/QfwP9qQoQqCFikoSA', '');
             },
           )
         ],
