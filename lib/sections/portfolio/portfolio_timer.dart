@@ -57,6 +57,7 @@ class _PortfolioTimerState extends State<PortfolioTimer> {
               fit: BoxFit.cover,
               image: AssetImage('assets/images/nagareru.png'),
             ),
+            color: Color(0xFFE8F0F9),
           ),
           child: Container(
             margin: EdgeInsets.only(top: 100.0),
