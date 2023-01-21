@@ -14,6 +14,7 @@ import 'package:my_web_site/sections/recommendation/recommendation_section.dart'
 import 'package:my_web_site/sections/service/service_section.dart';
 import 'package:my_web_site/sections/topSection/components/down_menu.dart';
 import 'package:my_web_site/sections/topSection/components/menu.dart';
+import 'package:my_web_site/sections/topSection/components/menu_screen.dart';
 import 'package:my_web_site/sections/topSection/top_section.dart';
 
 import 'sections/topSection/components/tap_menu.dart';
@@ -64,99 +65,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         ],
                       ),
                       extendBodyBehindAppBar: true,
-                      body: SingleChildScrollView(
-                        child: Container(
-                          decoration: const BoxDecoration(
-                              image: DecorationImage(
-                            image: AssetImage('assets/images/background4.png'),
-                            fit: BoxFit.cover,
-                          )),
-                          child: Container(
-                            width: double.infinity,
-                            height: 1000,
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                TextButton(
-                                  onPressed: () {
-                                    Navigator.of(context).pop();
-                                  },
-                                  child: Text(
-                                    '"Home"',
-                                    style: TextStyle(
-                                        fontSize: 80, color: Colors.black),
-                                  ),
-                                ),
-                                SizedBox(
-                                  height: 50,
-                                ),
-                                TextButton(
-                                  onPressed: () {
-                                    Navigator.of(context).pop();
-                                  },
-                                  child: Text(
-                                    '"Profile"',
-                                    style: TextStyle(
-                                        fontSize: 80, color: Colors.black),
-                                  ),
-                                ),
-                                SizedBox(
-                                  height: 50,
-                                ),
-                                TextButton(
-                                  onPressed: () {
-                                    Navigator.of(context).pop();
-                                  },
-                                  child: Text(
-                                    '"Development"',
-                                    style: TextStyle(
-                                        fontSize: 80, color: Colors.black),
-                                  ),
-                                ),
-                                SizedBox(
-                                  height: 50,
-                                ),
-                                TextButton(
-                                  onPressed: () {
-                                    Navigator.of(context).pop();
-                                  },
-                                  child: Text(
-                                    '"Portofolio"',
-                                    style: TextStyle(
-                                        fontSize: 80, color: Colors.black),
-                                  ),
-                                ),
-                                SizedBox(
-                                  height: 50,
-                                ),
-                                TextButton(
-                                  onPressed: () {
-                                    Navigator.of(context).pop();
-                                  },
-                                  child: Text(
-                                    '"Community"',
-                                    style: TextStyle(
-                                        fontSize: 80, color: Colors.black),
-                                  ),
-                                ),
-                                SizedBox(
-                                  height: 50,
-                                ),
-                                TextButton(
-                                  onPressed: () {
-                                    Navigator.of(context).pop();
-                                  },
-                                  child: Text(
-                                    '"Contact"',
-                                    style: TextStyle(
-                                        fontSize: 80, color: Colors.black),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ),
+                      body: MenuScreen(),
                     );
                   },
                   transitionsBuilder:
