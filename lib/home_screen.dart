@@ -43,7 +43,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ],
         ),
-        actions: [
+        /* actions: [
           IconButton(
             icon: Icon(Icons.menu),
             onPressed: () => {
@@ -88,7 +88,7 @@ class _HomeScreenState extends State<HomeScreen> {
             },
           ),
           //TapMenu(),
-        ],
+        ],*/
       ),
       extendBodyBehindAppBar: true,
       body: SingleChildScrollView(
