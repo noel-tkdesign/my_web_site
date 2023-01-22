@@ -8,6 +8,7 @@ import 'package:my_web_site/sections/contactImage/tablet_contact_image.dart';
 import 'package:my_web_site/sections/development/tablet_development_slider.dart';
 import 'package:my_web_site/sections/profile/tablet_profile.dart';
 import 'package:my_web_site/sections/recommendation/tablet_recomendation_section.dart';
+import 'package:my_web_site/sections/topSection/components/menu_screen.dart';
 import 'package:my_web_site/sections/topSection/tablet_top_section.dart';
 
 import 'sections/portfolio/tablet_portfolio_section.dart';
@@ -33,14 +34,30 @@ class TabletHomeScreen extends StatelessWidget {
             ),
           ],
         ),
-        actions: [
+        /* actions: [
           IconButton(
             icon: Icon(Icons.menu),
             onPressed: () => {
               Navigator.of(context).push(
                 PageRouteBuilder(
                   pageBuilder: (context, animation, secondaryAnimation) {
-                    return TabletDownMenu();
+                    return Scaffold(
+                      appBar: AppBar(
+                        elevation: 0,
+                        backgroundColor: Colors.transparent,
+                        iconTheme: IconThemeData(color: Colors.black),
+                        automaticallyImplyLeading: false,
+                        actions: [
+                          IconButton(
+                              onPressed: () {
+                                Navigator.of(context).pop();
+                              },
+                              icon: Icon(Icons.clear))
+                        ],
+                      ),
+                      extendBodyBehindAppBar: true,
+                      body: MenuScreen(),
+                    );
                   },
                   transitionsBuilder:
                       (context, animation, secondaryAnimation, child) {
@@ -61,8 +78,9 @@ class TabletHomeScreen extends StatelessWidget {
               ),
             },
           ),
+
           //TapMenu(),
-        ],
+        ],*/
       ),
       extendBodyBehindAppBar: true,
       body: SingleChildScrollView(

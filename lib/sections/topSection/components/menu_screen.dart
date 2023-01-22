@@ -10,10 +10,11 @@ class MenuScreen extends StatelessWidget {
     return SingleChildScrollView(
       child: Container(
         decoration: const BoxDecoration(
+            color: Color(0xFFE8F0F9),
             image: DecorationImage(
-          image: AssetImage('assets/images/background4.png'),
-          fit: BoxFit.cover,
-        )),
+              image: AssetImage('assets/images/nagareru.png'),
+              fit: BoxFit.cover,
+            )),
         child: Container(
           width: double.infinity,
           height: 1000,
