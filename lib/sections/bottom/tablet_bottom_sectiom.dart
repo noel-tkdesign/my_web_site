@@ -75,7 +75,7 @@ class TabletBottomSection extends StatelessWidget {
             Text(
               'Copyright © 2022 | tkworksDesign',
               style: TextStyle(
-                color: Colors.blueGrey[200],
+                color: Colors.blue,
                 fontSize: 14,
               ),
             ),
