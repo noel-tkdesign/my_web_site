@@ -86,7 +86,11 @@ class MobileProfile2 extends StatelessWidget {
                           width: 300,
                           child: Text(
                             comment,
-                            style: TextStyle(fontSize: 15),
+                            style: TextStyle(
+                                fontSize: 15,
+                                fontWeight: FontWeight.w400,
+                                color: Colors.black,
+                                height: 2),
                           ),
                         ),
                         SizedBox(

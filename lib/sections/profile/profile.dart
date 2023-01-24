@@ -95,7 +95,7 @@ class Profile extends StatelessWidget {
                           comment,
                           style: TextStyle(
                               fontSize: 20,
-                              fontWeight: FontWeight.w300,
+                              fontWeight: FontWeight.w400,
                               color: Colors.black,
                               height: 2),
                         ),

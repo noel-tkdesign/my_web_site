@@ -85,7 +85,11 @@ class TabletProfile extends StatelessWidget {
                           width: 400,
                           child: Text(
                             comment,
-                            style: TextStyle(fontSize: 15),
+                            style: TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.w400,
+                              color: Colors.black,
+                            ),
                           ),
                         ),
                         SizedBox(
