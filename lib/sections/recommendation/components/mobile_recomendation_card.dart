@@ -30,7 +30,7 @@ class _MobileRecomendationCardState extends State<MobileRecomendationCard> {
       child: AnimatedContainer(
         duration: duration,
         padding: EdgeInsets.symmetric(horizontal: 20),
-        height: 500,
+        height: 540,
         width: 300,
         decoration: BoxDecoration(
           color: recommendations[widget.index].color,

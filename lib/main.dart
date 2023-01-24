@@ -18,9 +18,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'tkworksdesign',
       theme: ThemeData(
-          inputDecorationTheme: kDefaultInputDecorationTheme,
-          visualDensity: VisualDensity.adaptivePlatformDensity,
-          fontFamily: 'NotoSansJP'),
+        inputDecorationTheme: kDefaultInputDecorationTheme,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+        fontFamily: 'NotoSansJP',
+      ),
       home: const HomePage(),
     );
   }

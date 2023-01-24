@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_web_site/sections/bottom/mobile_bottom_section.dart';
 import 'package:my_web_site/sections/bottom/tablet_bottom_sectiom.dart';
 import 'package:my_web_site/sections/contact/contact_section.dart';
 import 'package:my_web_site/sections/contactImage/mobile_contact-image.dart';
@@ -73,7 +74,7 @@ class MobileHomeScreen2 extends StatelessWidget {
             MoibilePortfolioSection(),
             MobileRecommendationSection(),
             MobileContactImage(),
-            TabletBottomSection()
+            MobileBottomSection()
           ],
         ),
       ),
